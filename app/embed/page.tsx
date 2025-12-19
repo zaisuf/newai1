@@ -6,9 +6,10 @@ import { fetchPublicAgent } from '../../services/firebaseService';
 import { AlertCircle, Loader2 } from 'lucide-react';
 
 // Unified Embed Dispatcher Map
-
+import ChatflowEmbed from '../chatflow/embed.tsx';
 import ThreeDEmbed from '../3dchat/embed.tsx';
-
+import FrostedEmbed from '../Frostedchat/embed.tsx';
+import VoiceEmbed from '../voiceflow/embed.tsx';
 
 const TEMPLATE_REGISTRY: Record<string, React.FC<any>> = {
   'chat': ChatflowEmbed,
